@@ -301,14 +301,13 @@ export default function Home() {
                   className="text-5xl sm:text-6xl font-medium text-ghost-white mb-6 leading-tight fade-in-up"
                   style={{ fontFamily: "var(--font-space-grotesk)" }}
                 >
-                  Membangun hal-hal untuk web.
+                  ELGA FIRMANTARA
                 </h1>
 
                 {/* Subheadline */}
                 <p className="text-lg sm:text-xl text-comet mb-12 leading-relaxed fade-in-up">
                   Mahasiswa Sistem Informasi FMIPA Universitas Tanjungpura yang
-                  berfokus pada pengembangan web full stack — dari antarmuka yang
-                  pixel-perfect hingga sistem backend yang tangguh.
+                  berfokus pada pengembangan web full stack dari antarmuka hingga sistem backend.
                 </p>
 
                 {/* CTA Buttons */}
@@ -345,26 +344,21 @@ export default function Home() {
               </div>
 
               {/* Right: Photo */}
-              <div className="flex justify-center fade-in-up">
-                <div
-                  className="w-full max-w-sm h-96 rounded-2xl flex items-center justify-center overflow-hidden"
-                  style={{
-                    background: "linear-gradient(135deg, rgba(102, 58, 243, 0.15) 0%, rgba(182, 217, 252, 0.1) 100%)",
-                    border: "1px solid rgba(186, 215, 247, 0.12)",
-                    boxShadow:
-                      "inset 0px 1px 1px 0px rgba(199, 211, 234, 0.12), inset 0px 24px 48px 0px rgba(199, 211, 234, 0.05), 0px 24px 32px 0px rgba(6, 6, 14, 0.7)",
-                  }}
-                >
-                  <div className="text-center">
-                    <div className="text-6xl mb-4">📸</div>
-                    <p className="text-sm text-whisper-blue">
-                      Tambahkan Foto Anda
-                    </p>
-                    <p className="text-xs text-whisper-blue/70 mt-2">
-                      600x480px (optimal)
-                    </p>
-                  </div>
-                </div>
+              <div
+                className="w-full max-w-sm h-96 rounded-2xl overflow-hidden"
+                style={{
+                  background:
+                    "linear-gradient(135deg, rgba(102, 58, 243, 0.15) 0%, rgba(182, 217, 252, 0.1) 100%)",
+                  border: "1px solid rgba(186, 215, 247, 0.12)",
+                  boxShadow:
+                    "inset 0px 1px 1px 0px rgba(199, 211, 234, 0.12), inset 0px 24px 48px 0px rgba(199, 211, 234, 0.05), 0px 24px 32px 0px rgba(6, 6, 14, 0.7)",
+                }}
+              >
+                <img
+                  src="/saya.jpeg"
+                  alt="Profile"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
