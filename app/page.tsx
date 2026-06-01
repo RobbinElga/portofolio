@@ -315,7 +315,17 @@ export default function Home() {
                   <button className="btn-pill btn-primary text-sm sm:text-base" onClick={() => document.getElementById("proyek")?.scrollIntoView({ behavior: "smooth" })}>
                     Lihat Proyek Saya
                   </button>
-                  <button className="btn-pill btn-secondary text-sm sm:text-base">
+                  <button
+                    className="btn-pill btn-secondary text-sm sm:text-base"
+                    onClick={() => {
+                      const link = document.createElement("a");
+                      link.href = "/CV.pdf";
+                      link.download = "CV.pdf";
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    }}
+                  >
                     Unduh CV
                   </button>
                 </div>
@@ -418,7 +428,7 @@ export default function Home() {
                     className="text-5xl font-medium text-ghost-white counter"
                     data-target="10"
                   >
-                    10+
+                    0
                   </div>
                   <p className="text-sm text-arctic-mist mt-2">Proyek Selesai</p>
                 </div>
@@ -562,7 +572,7 @@ export default function Home() {
         >
           <div className="section-container text-center">
             <p className="text-xs text-interstellar-gray">
-              Dirancang & dibangun oleh Elga Firmantara · 2025
+              Dirancang & dibangun oleh Elga Firmantara
             </p>
           </div>
         </footer>
